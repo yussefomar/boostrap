@@ -37,47 +37,55 @@
 
 .skill-card--social {
   left: 5%;
-  top: 490px;
+  top: 640px;
   --card-color: #38bdf8;
+}
+
+.skill-card--html-css {
+  left: 30%;
+  top: 899px;
+  --card-color: #22d3ee;
 }
 
 .skill-card--bootstrap {
    left: 58%;
-  top: 900px;
+  top: 750px;
   --card-color: #8b5cf6;
 }
 
 .skill-card--wordpress {
-   left: 58%;
-  top: 560px;
+   left: 68%;
+  top: 570px;
   --card-color: #0ea5e9;
 }
 
 .skill-card--python {
-   left: 28%;
-  top: 500px;
+   left: 22%;
+  top: 480px;
   --card-color: #a855f7;
 }
 
 .skill-card--sql {
   left: 62%;
-  top: 390px;
+  top: 387px;
   --card-color: #f59e0b;
 }
 
 .skill-card--excel {
+   left: 12%;
+  top: 280px;
   --card-color: #22c55e;
 }
 
 .skill-card--security {
-   left: 58%;
-  top: 250px;
+   left: 73%;
+  top: 218px;
   --card-color: #38bdf8;
 }
 
 .skill-card--ia {
-   left: 14%;
-  top: 220px;
+   left: 27%;
+  top: 59px;
   --card-color: #ef4444;
 }
 
@@ -130,6 +138,13 @@
   box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
 }
 
+.html-css-icon {
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0891b2, #67e8f9);
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.45);
+}
+
+.html-css-icon i,
 .social-icon i,
 .bootstrap-icon i,
 .wordpress-icon i,
