@@ -22,11 +22,11 @@
   --card-color: #22c55e;
 
   position: absolute;
-  width: 290px;
+  width: 225px;
   z-index: 2;
-  min-height: 135px;
-  padding: 18px 18px 14px 75px;
-  border-radius: 18px;
+  min-height: 108px;
+  padding: 14px 14px 12px 60px;
+  border-radius: 14px;
   background: rgba(5, 12, 28, 0.88);
   border: 2px solid var(--card-color);
   box-shadow:
@@ -36,8 +36,8 @@
 }
 
 .skill-card--social {
-  left: 5%;
-  top: 640px;
+  left: 25%;
+  top: 670px;
   --card-color: #38bdf8;
 }
 
@@ -48,32 +48,32 @@
 }
 
 .skill-card--bootstrap {
-   left: 58%;
-  top: 750px;
+   left: 54%;
+  top: 780px;
   --card-color: #8b5cf6;
 }
 
 .skill-card--wordpress {
-   left: 68%;
-  top: 570px;
+   left: 64%;
+  top: 610px;
   --card-color: #0ea5e9;
 }
 
 .skill-card--python {
    left: 22%;
-  top: 480px;
+  top: 520px;
   --card-color: #a855f7;
 }
 
 .skill-card--sql {
   left: 62%;
-  top: 387px;
+  top: 400px;
   --card-color: #f59e0b;
 }
 
 .skill-card--excel {
-   left: 12%;
-  top: 280px;
+   left: 22%;
+  top: 320px;
   --card-color: #22c55e;
 }
 
@@ -84,17 +84,17 @@
 }
 
 .skill-card--ia {
-   left: 27%;
-  top: 59px;
+   left: 30%;
+  top: 159px;
   --card-color: #ef4444;
 }
 
 .level-badge {
   position: absolute;
-  top: -18px;
-  left: -14px;
-  width: 56px;
-  height: 62px;
+  top: -14px;
+  left: -11px;
+  width: 44px;
+  height: 50px;
   clip-path: polygon(
     50% 0%,
     100% 25%,
@@ -109,7 +109,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
   box-shadow:
     0 0 14px color-mix(in srgb, var(--card-color) 60%, transparent),
@@ -118,30 +118,30 @@
 
 .skill-icon {
   position: absolute;
-  left: 16px;
-  top: 50px;
-  width: 42px;
-  height: 42px;
+  left: 12px;
+  top: 42px;
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .excel-icon {
-  border-radius: 14px;
+  border-radius: 11px;
   background: linear-gradient(135deg, #0f7a3b, #22c55e);
-  box-shadow: 0 0 16px rgba(34, 197, 94, 0.45);
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.45);
 }
 
 .python-icon {
   background: linear-gradient(135deg, #3776ab, #ffd43b);
-  box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.45);
 }
 
 .html-css-icon {
-  border-radius: 14px;
+  border-radius: 11px;
   background: linear-gradient(135deg, #0891b2, #67e8f9);
-  box-shadow: 0 0 16px rgba(34, 211, 238, 0.45);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.45);
 }
 
 .html-css-icon i,
@@ -153,34 +153,67 @@
 .excel-icon i,
 .security-icon i,
 .ia-icon i {
-  font-size: 34px;
+  font-size: 26px;
   color: white;
 }
 
 .skill-info h3 {
-  margin: 0 0 6px;
-  font-size: 18px;
+  margin: 0 0 4px;
+  font-size: 14px;
   font-weight: 800;
   color: white;
 }
 
+.social-icons-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.social-icons-row .bi {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.social-icons-row .bi-youtube {
+  background: #dc2626;
+}
+
+.social-icons-row .bi-instagram {
+  background: linear-gradient(135deg, #f97316, #d946ef);
+}
+
+.social-icons-row .bi-tiktok {
+  background: #020617;
+}
+
+.social-icons-row .bi-discord {
+  background: #5865f2;
+}
+
 .skill-info p {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: #e2e8f0;
-  font-size: 12px;
-  line-height: 1.35;
+  font-size: 10px;
+  line-height: 1.3;
 }
 
 .skill-progress {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
+  gap: 6px;
+  margin-bottom: 6px;
 }
 
 .skill-progress-track {
   flex: 1;
-  height: 6px;
+  height: 5px;
   border-radius: 999px;
   background: rgba(148, 163, 184, 0.18);
   overflow: hidden;
@@ -199,14 +232,14 @@
 
 .skill-progress span {
   color: white;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
 }
 
 .skill-xp {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   color: white;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 800;
 }
