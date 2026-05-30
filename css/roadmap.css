@@ -7,7 +7,7 @@
   padding: 50px;
   overflow: hidden;
     background-image: url("road3.png");
-  background-size: cover;
+   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -36,14 +36,14 @@
 }
 
 .skill-card--social {
-  left: 8%;
-  top: 590px;
+  left: 5%;
+  top: 490px;
   --card-color: #38bdf8;
 }
 
 .skill-card--bootstrap {
-   left: 48%;
-  top: 700px;
+   left: 58%;
+  top: 900px;
   --card-color: #8b5cf6;
 }
 

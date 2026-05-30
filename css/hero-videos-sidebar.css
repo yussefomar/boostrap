@@ -43,7 +43,7 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(330px, 1fr) minmax(410px, 1.18fr) 262px;
+  grid-template-columns: minmax(330px, 1fr) minmax(380px, 1fr);
   gap: 24px;
   min-height: 0;
 }
@@ -164,9 +164,7 @@
   margin: 0 auto;
 }
 
-.videos-panel-inner,
-.live-card,
-.progress-card {
+.videos-panel-inner {
   border: 1px solid rgba(168, 85, 247, 0.38);
   border-radius: 12px;
   background: rgba(8, 12, 27, 0.78);
@@ -180,9 +178,7 @@
   padding: 14px 16px 12px;
 }
 
-.videos-panel h2,
-.live-card h2,
-.progress-card h2 {
+.videos-panel h2 {
   margin: 0 0 14px;
   color: #c569ff;
   font-size: 16px;
@@ -334,146 +330,6 @@
   transform-origin: bottom center;
 }
 
-.hero-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.live-card,
-.progress-card {
-  padding: 16px 18px;
-}
-
-.live-card strong {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
-  color: #ff5a32;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.live-card strong span {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: #ff5a32;
-  box-shadow: 0 0 12px #ff5a32;
-}
-
-.twitch-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 900;
-}
-
-.twitch-brand .bi {
-  margin: 0;
-  color: #a855f7;
-  font-size: 36px;
-}
-
-.live-card p {
-  margin: 0 0 12px;
-  color: rgba(255, 255, 255, 0.74);
-}
-
-.live-card .hero-btn {
-  width: 100%;
-}
-
-.progress-card > span {
-  display: block;
-  margin-bottom: 8px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.progress-current {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.progress-badge {
-  width: 58px;
-  height: 66px;
-  display: grid;
-  place-items: center;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  border: 3px solid #c569ff;
-  background: rgba(5, 12, 28, 0.92);
-  color: #fff;
-  font-size: 27px;
-  font-weight: 900;
-  box-shadow: 0 0 20px rgba(197, 105, 255, 0.5);
-}
-
-.progress-current h3 {
-  margin: 0 0 4px;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 900;
-}
-
-.progress-current p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 12px;
-}
-
-.progress-bar-hero {
-  height: 8px;
-  margin: 12px 0 14px;
-  overflow: hidden;
-  border-radius: 999px;
-  background: rgba(71, 85, 105, 0.45);
-}
-
-.progress-bar-hero span {
-  display: block;
-  width: 65%;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #7c3aed, #d946ef);
-}
-
-.progress-card ul {
-  display: grid;
-  gap: 9px;
-  margin: 0;
-  padding: 12px 0 0;
-  border-top: 1px solid rgba(148, 163, 184, 0.18);
-  list-style: none;
-}
-
-.progress-card li {
-  display: grid;
-  grid-template-columns: 20px 1fr auto;
-  gap: 8px;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 12px;
-}
-
-.progress-card li .bi {
-  margin: 0;
-  color: #facc15;
-  font-size: 15px;
-}
-
-.progress-card li strong {
-  color: #fff;
-  font-size: 13px;
-}
-
 @media (max-width: 1199px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -481,10 +337,5 @@
 
   .hero-center {
     min-height: 500px;
-  }
-
-  .hero-sidebar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
