@@ -14,3 +14,6 @@
 @import url("tablet/beneficios.css");
 @import url("tablet/testimonios-videos.css");
 @import url("tablet/layout.css");
+@import url("mobile/header.css");
+@import url("mobile/hero-videos-sidebar.css");
+@import url("mobile/layout.css");

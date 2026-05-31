@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+  body {
+    background: #000;
+  }
+
+  main.container {
+    max-width: none;
+    width: 100%;
+    padding: 0 0 24px !important;
+  }
+
+  .home-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .home-layout > [data-include="partials/desktop/site-aside.html"],
+  .site-aside {
+    display: none;
+  }
+}

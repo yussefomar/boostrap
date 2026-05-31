@@ -1,6 +1,11 @@
 async function includeHtmlPartials() {
   const getIncludeFile = (placeholder) => {
+    const isMobile = window.matchMedia("(max-width: 767px)").matches;
     const isTablet = window.matchMedia("(min-width: 768px) and (max-width: 1280px)").matches;
+
+    if (isMobile && placeholder.hasAttribute("data-include-mobile")) {
+      return placeholder.getAttribute("data-include-mobile");
+    }
 
     if (isTablet && placeholder.hasAttribute("data-include-tablet")) {
       return placeholder.getAttribute("data-include-tablet");
