@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1200, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MEP Academia - Home Gamificada Desktop</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,23 +11,29 @@
 </head>
 
 <body>
-  <div data-include="partials/header.html"></div>
+  <div
+    data-include="partials/desktop/header.html"
+    data-include-tablet="partials/tablet/header.html"
+  ></div>
 
   <main class="container py-4">
     <div class="home-layout">
       <div class="home-content">
-        <div data-include="partials/hero-videos-sidebar.html"></div>
-        <div data-include="partials/roadmap.html"></div>
-        <div data-include="partials/beneficios.html"></div>
-        <div data-include="partials/testimonios-videos.html"></div>
-        <div data-include="partials/cta-whatsapp.html"></div>
+        <div
+          data-include="partials/desktop/hero-videos-sidebar.html"
+          data-include-tablet="partials/tablet/hero-videos-sidebar.html"
+        ></div>
+        <div data-include="partials/desktop/roadmap.html"></div>
+        <div data-include="partials/desktop/beneficios.html"></div>
+        <div data-include="partials/desktop/testimonios-videos.html"></div>
+        <div data-include="partials/desktop/cta-whatsapp.html"></div>
       </div>
 
-      <div data-include="partials/site-aside.html"></div>
+      <div data-include="partials/desktop/site-aside.html"></div>
     </div>
   </main>
 
-  <div data-include="partials/footer.html"></div>
+  <div data-include="partials/desktop/footer.html"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/include-html.js"></script>

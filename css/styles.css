@@ -1,11 +1,14 @@
 /* Archivo principal: une los estilos separados por seccion. */
-@import url("base.css");
-@import url("layout.css");
-@import url("header.css");
-@import url("hero-videos-sidebar.css");
-@import url("roadmap.css");
-@import url("site-aside.css");
-@import url("beneficios.css");
-@import url("testimonios-videos.css");
-@import url("cta-whatsapp.css");
-@import url("footer.css");
+@import url("desktop/base.css");
+@import url("desktop/layout.css");
+@import url("desktop/header.css");
+@import url("desktop/hero-videos-sidebar.css");
+@import url("desktop/roadmap.css");
+@import url("desktop/site-aside.css");
+@import url("desktop/beneficios.css");
+@import url("desktop/testimonios-videos.css");
+@import url("desktop/cta-whatsapp.css");
+@import url("desktop/footer.css");
+@import url("tablet/header.css");
+@import url("tablet/hero-videos-sidebar.css");
+@import url("tablet/layout.css");
