@@ -1,0 +1,59 @@
+@media (min-width: 768px) and (max-width: 1280px) {
+  .beneficios-section {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0;
+    margin: 24px 6px 0;
+    overflow: hidden;
+    border: 1px solid rgba(168, 85, 247, 0.44);
+    border-radius: 12px;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.22), transparent 38%),
+      rgba(8, 12, 27, 0.88);
+    box-shadow:
+      0 0 28px rgba(99, 102, 241, 0.18),
+      inset 0 0 28px rgba(10, 14, 34, 0.6);
+  }
+
+  .beneficio-card {
+    min-height: 128px;
+    padding: 20px 18px 18px;
+    border-right: 1px solid rgba(168, 85, 247, 0.45);
+    border-bottom: 0;
+    text-align: center;
+  }
+
+  .beneficio-card:last-child {
+    border-right: 0;
+  }
+
+  .beneficio-card .bi {
+    margin-bottom: 11px;
+    color: #a855f7;
+    font-size: 38px;
+    filter:
+      drop-shadow(0 0 10px rgba(168, 85, 247, 0.85))
+      drop-shadow(0 0 18px rgba(168, 85, 247, 0.28));
+  }
+
+  .beneficio-card:nth-child(2) .bi {
+    color: #facc15;
+  }
+
+  .beneficio-card:nth-child(4) .bi {
+    color: #f97316;
+  }
+
+  .beneficio-card h3 {
+    margin: 0 0 8px;
+    color: #c569ff;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .beneficio-card p {
+    max-width: 150px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 12px;
+    line-height: 1.42;
+  }
+}

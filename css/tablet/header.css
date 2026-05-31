@@ -13,33 +13,39 @@
   }
 
   .site-header-inner {
-    grid-template-columns: 260px minmax(0, 1fr) 180px;
+    grid-template-columns: 210px minmax(0, 1fr) 142px;
     min-height: 96px;
-    padding: 0 26px;
+    padding: 0 20px;
+  }
+
+  .site-brand {
+    gap: 10px;
   }
 
   .brand-mark {
-    width: 60px;
-    height: 66px;
-    font-size: 31px;
+    width: 54px;
+    height: 60px;
+    font-size: 28px;
   }
 
   .brand-text strong {
-    font-size: 31px;
+    font-size: 29px;
   }
 
   .brand-text small {
-    font-size: 21px;
+    font-size: 19px;
   }
 
   .site-nav {
-    justify-content: flex-start;
-    gap: 34px;
+    justify-content: center;
+    gap: clamp(18px, 2.4vw, 32px);
+    flex-wrap: nowrap;
+    overflow: visible;
   }
 
   .site-nav a {
     padding: 36px 0 29px;
-    font-size: 16px;
+    font-size: clamp(13px, 1.25vw, 16px);
   }
 
   .site-nav .nav-desktop-only {
@@ -62,7 +68,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
   }
 
   .tablet-notification {
@@ -89,8 +95,8 @@
   }
 
   .tablet-avatar {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 48px;
     padding: 3px;
     border-radius: 50%;
     background: linear-gradient(135deg, #c569ff, #38bdf8);
@@ -111,7 +117,8 @@
   .tablet-level {
     display: grid;
     gap: 6px;
-    min-width: 42px;
+    min-width: 38px;
+    font-size: 14px;
     color: #d8b4fe;
     font-weight: 900;
   }
