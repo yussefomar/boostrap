@@ -20,3 +20,7 @@
 @import url("mobile/beneficios.css");
 @import url("mobile/testimonios-videos.css");
 @import url("mobile/layout.css");
+
+.roadmap {
+  background-image: url("../img/road3.png");
+}
