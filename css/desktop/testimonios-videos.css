@@ -1,0 +1,156 @@
+.testimonios-videos-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.testimonios-panel,
+.videos-recientes-panel {
+  padding: 16px;
+  border: 1px solid rgba(168, 85, 247, 0.38);
+  border-radius: 12px;
+  background: rgba(8, 12, 27, 0.82);
+  box-shadow:
+    0 0 24px rgba(99, 102, 241, 0.13),
+    inset 0 0 22px rgba(10, 14, 34, 0.62);
+}
+
+.testimonios-panel h2,
+.videos-recientes-panel h2 {
+  margin: 0 0 12px;
+  color: #c569ff;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.testimonial-item {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.testimonial-item:first-child {
+  grid-row: span 2;
+}
+
+.testimonial-avatar {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f4d7b5, #24364c);
+  color: #111827;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.testimonial-item p {
+  margin: 0 0 5px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.testimonial-item span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+}
+
+.testimonial-stars {
+  grid-column: 2;
+  color: #facc15;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.recent-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.recent-video-card {
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 8px;
+  background: rgba(6, 10, 24, 0.9);
+}
+
+.recent-video-thumb {
+  position: relative;
+  height: 84px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.28), transparent 15%),
+    linear-gradient(135deg, #5b21b6, #020617);
+}
+
+.recent-video-gold .recent-video-thumb {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.28), transparent 15%),
+    linear-gradient(135deg, #92400e, #020617);
+}
+
+.recent-video-blue .recent-video-thumb {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.28), transparent 15%),
+    linear-gradient(135deg, #075985, #020617);
+}
+
+.recent-video-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.recent-video-thumb .bi {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 40px;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.35));
+}
+
+.recent-video-thumb span {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  z-index: 1;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.recent-video-card h3 {
+  min-height: 42px;
+  margin: 8px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+@media (max-width: 1199px) {
+  .testimonios-videos-section,
+  .testimonial-grid,
+  .recent-video-grid {
+    grid-template-columns: 1fr;
+  }
+}

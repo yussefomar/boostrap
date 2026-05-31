@@ -1,0 +1,97 @@
+@media (max-width: 767px) {
+  .testimonios-videos-section {
+    display: block;
+    margin: 12px 22px 0;
+  }
+
+  .videos-recientes-panel {
+    display: none;
+  }
+
+  .testimonios-panel {
+    padding: 16px;
+    border: 1px solid rgba(168, 85, 247, 0.44);
+    border-radius: 12px;
+    background:
+      radial-gradient(circle at 12% 20%, rgba(168, 85, 247, 0.18), transparent 28%),
+      rgba(8, 12, 27, 0.88);
+    box-shadow:
+      0 0 24px rgba(99, 102, 241, 0.15),
+      inset 0 0 24px rgba(10, 14, 34, 0.62);
+  }
+
+  .testimonios-heading {
+    margin-bottom: 14px;
+  }
+
+  .testimonios-heading h2 {
+    margin: 0;
+    color: #c569ff;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .testimonios-heading span {
+    display: block;
+    margin-top: 3px;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 245px;
+    grid-template-columns: none;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .testimonial-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-item,
+  .testimonial-item:first-child {
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 10px;
+    min-height: 138px;
+    padding: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 11px;
+    background: rgba(6, 10, 24, 0.72);
+  }
+
+  .testimonial-avatar {
+    width: 42px;
+    height: 42px;
+    border-color: rgba(197, 105, 255, 0.72);
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.34);
+  }
+
+  .testimonial-item p {
+    margin: 0 0 7px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 12px;
+    line-height: 1.36;
+  }
+
+  .testimonial-item span {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  .testimonial-stars {
+    grid-column: 2;
+    color: #facc15;
+    font-size: 12px;
+  }
+}

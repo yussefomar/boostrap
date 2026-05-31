@@ -1,0 +1,189 @@
+.site-aside {
+  position: sticky;
+  top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aside-card {
+  padding: 18px;
+  border: 1px solid rgba(168, 85, 247, 0.58);
+  border-radius: 9px;
+  background: rgba(8, 12, 27, 0.88);
+  box-shadow:
+    0 0 24px rgba(99, 102, 241, 0.12),
+    inset 0 0 22px rgba(10, 14, 34, 0.7);
+}
+
+.aside-card h2 {
+  margin: 0 0 14px;
+  color: #c569ff;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.live-aside-card strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #ff6337;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.live-aside-card strong span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ff6337;
+  box-shadow: 0 0 12px #ff6337;
+}
+
+.aside-twitch-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 29px;
+  font-weight: 900;
+}
+
+.aside-twitch-brand .bi {
+  color: #b45cff;
+  font-size: 36px;
+}
+
+.live-aside-card p,
+.next-steps-card p {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.aside-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 42px;
+  border: 1px solid rgba(203, 149, 255, 0.7);
+  border-radius: 6px;
+  background: linear-gradient(180deg, #a855f7, #7c2fe0);
+  color: #fff;
+  font-weight: 900;
+  box-shadow: 0 0 24px rgba(139, 92, 246, 0.34);
+}
+
+.progress-aside-card > span {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.aside-progress-current {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.aside-progress-badge {
+  width: 52px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-right: 2px solid #c569ff;
+  border-left: 2px solid #c569ff;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.aside-progress-current h3 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.aside-progress-current p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.aside-progress-bar {
+  height: 7px;
+  margin: 16px 0;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(71, 85, 105, 0.55);
+}
+
+.aside-progress-bar span {
+  display: block;
+  width: 65%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #8b5cf6, #d946ef);
+}
+
+.progress-aside-card ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 14px 0 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+  list-style: none;
+}
+
+.progress-aside-card li {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  gap: 8px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 12px;
+}
+
+.progress-aside-card li .bi {
+  color: #facc15;
+  font-size: 15px;
+}
+
+.progress-aside-card li strong {
+  color: #fff;
+  font-size: 13px;
+}
+
+.next-steps-card {
+  margin-top: 40px;
+}
+
+.next-steps-card h2 {
+  color: #fff;
+  text-transform: none;
+}
+
+.next-steps-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .site-aside {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .next-steps-card {
+    margin-top: 0;
+  }
+}

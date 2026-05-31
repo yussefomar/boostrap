@@ -1,0 +1,146 @@
+@media (max-width: 767px) {
+  .roadmap-section {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  }
+
+  .roadmap {
+    min-height: 820px;
+    padding: 22px;
+    background-size: contain;
+  }
+
+  .skill-card {
+    width: 150px;
+    min-height: 74px;
+    padding: 10px 10px 9px 42px;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow:
+      0 0 10px color-mix(in srgb, var(--card-color) 26%, transparent),
+      inset 0 0 12px color-mix(in srgb, var(--card-color) 10%, transparent);
+  }
+
+  .level-badge {
+    top: -10px;
+    left: -8px;
+    width: 32px;
+    height: 36px;
+    border-width: 1px;
+    font-size: 14px;
+    box-shadow:
+      0 0 9px color-mix(in srgb, var(--card-color) 58%, transparent),
+      inset 0 0 9px color-mix(in srgb, var(--card-color) 16%, transparent);
+  }
+
+  .skill-icon {
+    left: 9px;
+    top: 31px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .excel-icon,
+  .html-css-icon {
+    border-radius: 8px;
+  }
+
+  .html-css-icon i,
+  .social-icon i,
+  .bootstrap-icon i,
+  .wordpress-icon i,
+  .python-icon i,
+  .sql-icon i,
+  .excel-icon i,
+  .security-icon i,
+  .ia-icon i {
+    font-size: 18px;
+  }
+
+  .skill-info h3 {
+    margin-bottom: 3px;
+    font-size: 10px;
+    line-height: 1.15;
+  }
+
+  .skill-info p {
+    margin-bottom: 5px;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  .skill-progress {
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+
+  .skill-progress-track {
+    height: 4px;
+  }
+
+  .skill-progress span {
+    font-size: 8px;
+  }
+
+  .skill-xp {
+    gap: 5px;
+    font-size: 8px;
+  }
+
+  .social-icons-row {
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+
+  .social-icons-row .bi {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    font-size: 9px;
+  }
+
+  .skill-card--ia {
+    left: 28%;
+    top: 80px;
+  }
+
+  .skill-card--security {
+    left: 74%;
+    top: 195px;
+  }
+
+  .skill-card--excel {
+    left: 25%;
+    top: 230px;
+  }
+
+  .skill-card--sql {
+    left: 66%;
+    top: 370px;
+  }
+
+  .skill-card--python {
+    left: 18%;
+    top: 395px;
+  }
+
+  .skill-card--wordpress {
+    left: 62%;
+    top: 525px;
+  }
+
+  .skill-card--social {
+    left: 23%;
+    top: 510px;
+  }
+
+  .skill-card--bootstrap {
+    left: 55%;
+    top: 660px;
+  }
+
+  .skill-card--html-css {
+    left: 25%;
+    top: 735px;
+  }
+}

@@ -1,0 +1,138 @@
+  .tablet-header-user {
+    display: none;
+  }
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .site-header {
+    margin: 26px 14px 0;
+    border: 1px solid rgba(168, 85, 247, 0.22);
+    border-radius: 28px 28px 0 0;
+    background:
+      radial-gradient(circle at 12% 50%, rgba(168, 85, 247, 0.16), transparent 24%),
+      rgba(4, 8, 24, 0.96);
+  }
+
+  .site-header-inner {
+    grid-template-columns: 210px minmax(0, 1fr) 142px;
+    min-height: 96px;
+    padding: 0 20px;
+  }
+
+  .site-brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 54px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .brand-text strong {
+    font-size: 29px;
+  }
+
+  .brand-text small {
+    font-size: 19px;
+  }
+
+  .site-nav {
+    justify-content: center;
+    gap: clamp(18px, 2.4vw, 32px);
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+
+  .site-nav a {
+    padding: 36px 0 29px;
+    font-size: clamp(13px, 1.25vw, 16px);
+  }
+
+  .site-nav .nav-desktop-only {
+    display: none;
+  }
+
+  .site-nav a.active {
+    order: -1;
+  }
+
+  .site-nav a.active::after {
+    bottom: 20px;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .tablet-header-user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tablet-notification {
+    position: relative;
+    width: 30px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .tablet-notification span {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ef4444;
+    box-shadow: 0 0 9px rgba(239, 68, 68, 0.8);
+  }
+
+  .tablet-avatar {
+    width: 48px;
+    height: 48px;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c569ff, #38bdf8);
+    box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
+  }
+
+  .tablet-avatar span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background:
+      radial-gradient(circle at 48% 35%, #f6c9a8 0 19%, transparent 20%),
+      radial-gradient(circle at 48% 22%, #111827 0 27%, transparent 28%),
+      linear-gradient(135deg, #0f766e, #111827);
+  }
+
+  .tablet-level {
+    display: grid;
+    gap: 6px;
+    min-width: 38px;
+    font-size: 14px;
+    color: #d8b4fe;
+    font-weight: 900;
+  }
+
+  .tablet-level span {
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #a855f7, #d946ef);
+    box-shadow: 0 0 10px rgba(217, 70, 239, 0.75);
+  }
+}
+
+@media (min-width: 1281px) {
+  .tablet-header-user {
+    display: none;
+  }
+}
